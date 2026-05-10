@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: gal-prediction-contest-backend
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://139.224.197.83:3306/gpc?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: user
+    password: user123
+
+server:
+  port: 6000
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
